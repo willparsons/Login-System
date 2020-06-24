@@ -1,11 +1,11 @@
-from account import Account
+from login import Login
 
 
 def main():
     username = input("Enter username: ")
     password = input("Enter password: ")
 
-    Account.login(username, password)
+    Login.login(username, password)
 
 
 if __name__ == "__main__":
