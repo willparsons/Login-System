@@ -16,7 +16,8 @@ def insert_account(username: str, password: str, directory: str) -> None:
 
             obj = {
                 "username": username,
-                "password": password
+                "password": password,
+                "permissions": ["User"]
             }
             temp.append(obj)
             write_json(data, f)

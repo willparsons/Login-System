@@ -18,7 +18,3 @@ class Login:
 
         elif exists == utils.SUCCESS:
             print("Login successful.")
-
-        # todo: encrypt file
-
-
