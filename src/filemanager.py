@@ -1,6 +1,11 @@
 import json
 from typing import Any
 
+"""
+DEPRECATED 
+MOVING TO SQL IMPLEMENTATION
+"""
+
 
 def write_json(data, filename) -> None:
     with open(filename, "w") as f:

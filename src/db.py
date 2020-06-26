@@ -35,6 +35,3 @@ def get_all_users():
 def get_user_by_username(username: str):
     c.execute("SELECT * FROM users WHERE username=:username", {"username": username})
     return c.fetchall()
-
-
-
