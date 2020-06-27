@@ -18,3 +18,4 @@ class Login:
 
         elif exists == utils.SUCCESS:
             print("Login successful.")
+            return account

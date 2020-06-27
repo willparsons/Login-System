@@ -5,7 +5,8 @@ def main():
     username = input("Enter username: ")
     password = input("Enter password: ")
 
-    Login.login(username, password)
+    willie = Login.login(username, password)
+    print(willie.permission_level)
 
 
 if __name__ == "__main__":
