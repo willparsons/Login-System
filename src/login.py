@@ -9,7 +9,7 @@ class Login:
         account = Account(username, password)
         exists = account.exists()
 
-        # TODO: END USER SHOULD NOT BE ABLE TO MAKE THEIR OWN ACCOUNT
+        # TODO: GUI functionality to login as Admin and create user account
         if exists == utils.NO_USER:
             print(f"Account with username \"{username}\" not found. Requires admin to create.")
 
