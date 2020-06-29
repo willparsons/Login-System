@@ -1,4 +1,6 @@
 import sqlite3
+from hashdetails import hash_string
+
 
 conn = sqlite3.connect("../db/users.db")
 c = conn.cursor()
@@ -19,7 +21,7 @@ def create_users_table():
 def insert_user(username: str, password: str, permission_level: int):
     with conn:
         c.execute("INSERT INTO users VALUES (:username, :password, :permission_level)",
-                  {"username": username, "password": password, "permission_level": permission_level})
+                  {"username": username, "password": hash_string(password), "permission_level": permission_level})
 
 
 def delete_user(username: str):
