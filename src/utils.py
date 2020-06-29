@@ -1,6 +1,6 @@
-SUCCESS: int = -1
-NO_USER: int = 0
-INVALID_PASS: int = 1
+NO_USER: int = -1
+INVALID_PASS: int = 0
+SUCCESS: int = 1
 
 DIRECTORY: str = "users"
 

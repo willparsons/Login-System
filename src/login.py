@@ -4,14 +4,13 @@ import utils
 
 # return account object
 class Login:
-
     @staticmethod
     def login(username: str, password: str):
         account = Account(username, password)
         exists = account.exists()
 
         if exists == utils.NO_USER:
-            account.make_account()
+            print(f"Account with username \"{username}\" not found. Requires admin to create.")
 
         elif exists == utils.INVALID_PASS:
             print("Invalid password")
