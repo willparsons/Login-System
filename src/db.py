@@ -12,7 +12,7 @@ def create_users_table():
             c.execute("""CREATE TABLE users (
                 username text,
                 password text,
-                permissions_level integer
+                permissions_level integer 
             )""")
     except sqlite3.OperationalError:
         print("Table users has already been created.")
